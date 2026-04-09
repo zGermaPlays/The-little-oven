@@ -12,12 +12,17 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 70px;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      letter-spacing: 2px;
-    }
+<h1 style="
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+">
+  The Little Oven
+</h1>
+
 
     .menu-container {
       width: 90%;
