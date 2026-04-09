@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Event Menu</title>
+  <title>The Little Oven Menu</title>
   <style>
     body {
       margin: 0;
@@ -12,17 +12,23 @@
       text-align: center;
     }
 
-<h1 style="
-  font-size: 90px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  font-family: 'Georgia', serif;
-">
-  The Little Oven
-</h1>
+    /* Fancy Bakery Header */
+    .bakery-header {
+      font-size: 90px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+    }
 
+    .tagline {
+      font-size: 40px;
+      opacity: 0.8;
+      margin-top: -20px;
+      margin-bottom: 40px;
+      font-family: 'Georgia', serif;
+    }
 
     .menu-container {
       width: 90%;
@@ -65,7 +71,10 @@
 </head>
 
 <body>
-  <h1>Tonight’s Menu</h1>
+
+  <!-- Fancy Bakery Header -->
+  <div class="bakery-header">The Little Oven</div>
+  <div class="tagline">Fresh Baked Goods & Event Specials</div>
 
   <div class="menu-container">
 
@@ -96,4 +105,3 @@
   </div>
 </body>
 </html>
-
