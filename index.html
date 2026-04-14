@@ -6,9 +6,9 @@
     body {
       margin: 0;
       padding: 0;
-      background: #0F0F0F;
-      color: #E8E8E8;
-      font-family: 'Comic Sans MS', Arial;
+      background: #0F0F0F; /* Chalkboard background */
+      color: #E8E8E8; /* Chalk white */
+      font-family: 'Comic Sans MS', Arial, sans-serif;
       text-align: center;
     }
 
@@ -25,17 +25,17 @@
 
     .tagline {
       font-size: 45px;
-      opacity: 0.8;
+      opacity: 0.9;
       margin-top: -20px;
       margin-bottom: 40px;
-      font-family: 'Comic Sans MS', Arial;
+      font-family: 'Comic Sans MS', cursive;
       color: #E8E8E8;
-    }
+}
 
     /* TWO-COLUMN GRID */
     .menu-container {
       width: 90%;
-      max-width: 1600px;
+    max-width: 1600px;
       margin: auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -43,10 +43,10 @@
     }
 
     .menu-item {
-      background: rgba(255,255,255,0.05); /* faint chaulk smudge look
+      background: rgba(255, 255, 255, 0.05); /* faint chalk smudge look */
       padding: 30px;
       border-radius: 20px;
-      border: 2px solid rgba(255,255,255,0.15);
+      border: 2px solid rgba(255, 255, 255, 0.15);
     }
 
     .menu-item img {
@@ -54,31 +54,37 @@
       max-width: 90%;
       border-radius: 15px;
       margin-bottom: 20px;
+      border: 3px dashed rgba(255, 255, 255, 0.2); /* chalky border */
     }
 
     .item-name {
       font-size: 55px;
       font-weight: bold;
       margin-bottom: 10px;
-    }
+      color: #FFFFFF;
+      font-family: 'Comic Sans MS', Arial;
+}
 
     .item-desc {
       font-size: 34px;
-      opacity: 0.8;
+      opacity: 0.85;
       margin-bottom: 15px;
+      font-family: Arial, sans-serif; /* readable contrast */
     }
 
     .item-price {
       font-size: 50px;
-      color: #ffd700;
+      color: #FFDE59; /* chalk yellow */
       font-weight: bold;
+      text-shadow: 0px 0px 6px rgba(255, 222, 89, 0.4);
+      font-family: 'Comic Sans MS', cursive;
     }
-
+  
     /* QR SECTION */
     .qr-section {
       margin-top: 80px;
       padding: 40px 0;
-      border-top: 3px solid #444;
+      border-top: 3px solid rgba(255, 255, 255, 0.2);
       display: flex;
       justify-content: center;
       gap: 120px;
@@ -93,13 +99,17 @@
       height: 300px;
       border-radius: 20px;
       background: #fff;
+      border: 4px solid rgba(255, 255, 255, 0.3);
     }
 
     .qr-label {
       font-size: 40px;
       margin-top: 20px;
       font-weight: bold;
+      color: #FFFFFF;
+      font-family: 'Comic Sans MS', cursive;
     }
+
   </style>
 </head>
 
