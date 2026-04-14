@@ -14,7 +14,7 @@
 
     /* Fancy Bakery Header */
     .bakery-header {
-      font-size: 90px;
+      font-size: 100px;
       font-weight: 700;
       letter-spacing: 3px;
       margin-top: 40px;
@@ -23,48 +23,78 @@
     }
 
     .tagline {
-      font-size: 40px;
+      font-size: 45px;
       opacity: 0.8;
       margin-top: -20px;
       margin-bottom: 40px;
       font-family: 'Georgia', serif;
     }
 
+    /* TWO-COLUMN GRID */
     .menu-container {
       width: 90%;
-      max-width: 1200px;
+      max-width: 1600px;
       margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
     }
 
     .menu-item {
       background: #222;
       padding: 30px;
-      margin: 30px 0;
       border-radius: 20px;
     }
 
     .menu-item img {
-      width: 400px;
+      width: 300px;
       max-width: 90%;
       border-radius: 15px;
       margin-bottom: 20px;
     }
 
     .item-name {
-      font-size: 50px;
+      font-size: 55px;
       font-weight: bold;
       margin-bottom: 10px;
     }
 
     .item-desc {
-      font-size: 32px;
+      font-size: 34px;
       opacity: 0.8;
       margin-bottom: 15px;
     }
 
     .item-price {
-      font-size: 45px;
+      font-size: 50px;
       color: #ffd700;
+      font-weight: bold;
+    }
+
+    /* QR SECTION */
+    .qr-section {
+      margin-top: 80px;
+      padding: 40px 0;
+      border-top: 3px solid #444;
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+    }
+
+    .qr-box {
+      text-align: center;
+    }
+
+    .qr-box img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+      background: #fff;
+    }
+
+    .qr-label {
+      font-size: 40px;
+      margin-top: 20px;
       font-weight: bold;
     }
   </style>
@@ -82,7 +112,7 @@
     <div class="menu-item">
       <img src="">
       <div class="item-name">Original Full Loaf</div>
-      <div class="item-desc"> baked to perfection!</div>
+      <div class="item-desc">Baked to perfection!</div>
       <div class="item-price">$9</div>
     </div>
 
@@ -90,19 +120,19 @@
     <div class="menu-item">
       <img src="">
       <div class="item-name">Jalapeno & Cheddar Full Loaf</div>
-      <div class="item-desc">Spicy Jalapenos and cheddar cheese. Full of flavor and spice!</div>
+      <div class="item-desc">Spicy jalapenos and cheddar cheese. Full of flavor and spice!</div>
       <div class="item-price">$12</div>
     </div>
 
     <!-- ITEM 3 -->
     <div class="menu-item">
       <img src="">
-      <div class="item-name">Italian Herbs & Cheddar full loaf</div>
-      <div class="item-desc">Itialian Seasoning with Cheddar cheese baked to perfectiom! </div>
+      <div class="item-name">Italian Herbs & Cheddar Full Loaf</div>
+      <div class="item-desc">Italian seasoning with cheddar cheese baked to perfection!</div>
       <div class="item-price">$12</div>
     </div>
-    
-    <!-- ITEM TEMPLATE 1 -->
+
+    <!-- ITEM 4 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Cheddar Full Loaf</div>
@@ -110,7 +140,7 @@
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM TEMPLATE 2 -->
+    <!-- ITEM 5 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Chocolate Chip Full Loaf</div>
@@ -118,63 +148,31 @@
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM TEMPLATE 3 -->
+    <!-- ITEM 6 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Cinnamon Raisin Full Loaf</div>
-      <div class="item-desc">Perfect breakfast pairing! </div>
+      <div class="item-desc">Perfect breakfast pairing!</div>
       <div class="item-price">$13</div>
     </div>
 
-    <!-- ITEM TEMPLATE 4 -->
+    <!-- ITEM 7 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Sourdough English Muffins</div>
-      <div class="item-desc">These will make a perfect bun to your breakfast sandwich!</div>
+      <div class="item-desc">Perfect bun for your breakfast sandwich!</div>
       <div class="item-price">$2</div>
     </div>
 
-    <!-- ITEM TEMPLATE 5 -->
+    <!-- ITEM 8 -->
     <div class="menu-item">
       <img src="">
-      <div class="item-name">Sourdough Discard Cookies!</div>
-      <div class="item-desc">Chocolate Chip & M&Ms, Cookies and Cream, Smores, PB</div>
+      <div class="item-name">Sourdough Discard Cookies</div>
+      <div class="item-desc">Chocolate Chip, M&Ms, Cookies & Cream, S'mores, PB</div>
       <div class="item-price">$3</div>
     </div>
-    
-    <!-- ITEM TEMPLATE 6 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Item Name</div>
-      <div class="item-desc">Short description goes here</div>
-      <div class="item-price">$0.00</div>
-    </div>
-    
-    <!-- ITEM TEMPLATE 7 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Item Name</div>
-      <div class="item-desc">Short description goes here</div>
-      <div class="item-price">$0.00</div>
-    </div>
-    
-    <!-- ITEM TEMPLATE 8 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Item Name</div>
-      <div class="item-desc">Short description goes here</div>
-      <div class="item-price">$0.00</div>
-    </div>
-    
-    <!-- ITEM TEMPLATE 9 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Item Name</div>
-      <div class="item-desc">Short description goes here</div>
-      <div class="item-price">$0.00</div>
-    </div>
-    
-    <!-- ITEM TEMPLATE 10 -->
+
+    <!-- ITEM 9 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Item Name</div>
@@ -182,7 +180,27 @@
       <div class="item-price">$0.00</div>
     </div>
 
+    <!-- ITEM 10 -->
+    <div class="menu-item">
+      <img src="">
+      <div class="item-name">Item Name</div>
+      <div class="item-desc">Short description goes here</div>
+      <div class="item-price">$0.00</div>
+    </div>
 
   </div>
+
+  <!-- QR SECTION -->
+  <div class="qr-section">
+    <div class="qr-box">
+      <img src="">
+      <div class="qr-label">CashApp</div>
+    </div>
+    <div class="qr-box">
+      <img src="">
+      <div class="qr-label">Venmo</div>
+    </div>
+  </div>
+
 </body>
 </html>
