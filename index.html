@@ -11,7 +11,7 @@
       font-family: Arial, sans-serif;
       text-align: center;
     }
-    
+
     /* Header */
     .bakery-header {
       font-size: 60px;
@@ -22,7 +22,7 @@
       font-family: 'Comic Sans MS', sans-serif;
       color: #FFFFFF;
     }
-    
+
     .tagline {
       font-size: 26px;
       opacity: 0.9;
@@ -31,7 +31,7 @@
       font-family: 'Comic Sans MS', sans-serif;
       color: #E8E8E8;
     }
-    
+
     /* THREE-COLUMN GRID */
     .menu-container {
       width: 95%;
@@ -39,61 +39,32 @@
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    
-    .menu-item {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 15px;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
-    
-    .menu-item img {
-      width: 160px;
-      max-width: 90%;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      border: 2px dashed rgba(255, 255, 255, 0.2);
-    }
-    
-    .item-name {
-      font-size: 30px;
-      font-weight: bold;
-      margin-bottom: 6px;
-      color: #FFFFFF;
-      font-family: 'Comic Sans MS', sans-serif;
-    }
-    
-    .item-desc {
-      font-size: 20px;
-      opacity: 0.85;
-      margin-bottom: 8px;
-      font-family: Arial, sans-serif;
-    }
-    
-    .item-price {
-      font-size: 28px;
-      color: #FFDE59;
-      font-weight: bold;
-      text-shadow: 0px 0px 3px rgba(255, 222, 89, 0.4);
-      font-family: 'Comic Sans MS', sans-serif;
+      gap: 20px;
     }
 
-    /* Chalk Divider */
-    .chalk-divider {
-      grid-column: span 3;
-      height: 2px;
-      background: linear-gradient(
-        to right,
-        rgba(255,255,255,0) 0%,
-        rgba(255,255,255,0.6) 50%,
-        rgba(255,255,255,0) 100%
-      );
-      margin: 10px 0 5px 0;
-      filter: blur(0.5px);
+    .menu-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      min-height: 350px;
     }
-    
+
+    .box-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      font-family: 'Comic Sans MS', sans-serif;
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    .menu-line {
+      font-size: 20px;
+      margin: 6px 0;
+      opacity: 0.9;
+    }
+
     /* QR SECTION */
     .qr-section {
       margin-top: 40px;
@@ -103,7 +74,7 @@
       justify-content: center;
       gap: 60px;
     }
-    
+
     .qr-box img {
       width: 180px;
       height: 180px;
@@ -111,7 +82,7 @@
       background: #fff;
       border: 3px solid rgba(255, 255, 255, 0.3);
     }
-    
+
     .qr-label {
       font-size: 26px;
       margin-top: 10px;
@@ -119,76 +90,40 @@
       color: #FFFFFF;
       font-family: Arial, sans-serif;
     }
-
   </style>
 </head>
 
 <body>
 
-  <!-- Fancy Bakery Header -->
+  <!-- Header -->
   <div class="bakery-header">The Little Oven</div>
   <div class="tagline">Fresh Sourdough Bread & Sweet treats! HGN popup event!</div>
 
+  <!-- THREE MAIN CATEGORY BOXES -->
   <div class="menu-container">
 
-    <!-- CATEGORY: FULL LOAVES -->
-    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
-      <div class="item-name" style="font-size: 36px;">Full Loaves</div>
-    </div>
-    <div class="chalk-divider"></div>
-
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Original Full Loaf</div>
-      <div class="item-desc">Classic sourdough with a crisp crust.</div>
-      <div class="item-price">$9</div>
+    <!-- FULL LOAVES -->
+    <div class="menu-box">
+      <div class="box-title">Full Loaves</div>
+      <div class="menu-line">Original Full Loaf — $9</div>
+      <div class="menu-line">Jalapeño & Cheddar — $12</div>
+      <div class="menu-line">Italian Herbs & Cheddar — $12</div>
+      <div class="menu-line">Strawberry White Chocolate — $12</div>
     </div>
 
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Jalapeño & Cheddar Full Loaf</div>
-      <div class="item-desc">Spicy jalapeños and melted cheddar.</div>
-      <div class="item-price">$12</div>
+    <!-- MINI LOAVES -->
+    <div class="menu-box">
+      <div class="box-title">Mini Loaves</div>
+      <div class="menu-line">Chocolate Chip Mini Loaf — $12</div>
     </div>
 
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Italian Herbs & Cheddar Full Loaf</div>
-      <div class="item-desc">Italian seasoning blended with cheddar.</div>
-      <div class="item-price">$12</div>
-    </div>
-
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Strawberry White Chocolate Full Loaf</div>
-      <div class="item-desc">Sweet, fruity, and perfect as a treat.</div>
-      <div class="item-price">$12</div>
-    </div>
-
-    <!-- CATEGORY: MINI LOAVES -->
-    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
-      <div class="item-name" style="font-size: 36px;">Mini Loaves</div>
-    </div>
-    <div class="chalk-divider"></div>
-
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Chocolate Chip Mini Loaf</div>
-      <div class="item-desc">Sweet sourdough with chocolate chips.</div>
-      <div class="item-price">$12</div>
-    </div>
-
-    <!-- CATEGORY: COOKIES -->
-    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
-      <div class="item-name" style="font-size: 36px;">Cookies</div>
-    </div>
-    <div class="chalk-divider"></div>
-
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Sourdough Discard Cookies</div>
-      <div class="item-desc">Chocolate Chip • M&Ms • Cookies & Cream • S’mores • PB</div>
-      <div class="item-price">$3</div>
+    <!-- COOKIES -->
+    <div class="menu-box">
+      <div class="box-title">Cookies</div>
+      <div class="menu-line">Sourdough Discard Cookies — $3</div>
+      <div class="menu-line" style="font-size: 18px; opacity: 0.8;">
+        Chocolate Chip • M&Ms • Cookies & Cream • S’mores • PB
+      </div>
     </div>
 
   </div>
