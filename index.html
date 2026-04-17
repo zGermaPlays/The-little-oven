@@ -3,7 +3,7 @@
 <head>
   <title>The Little Oven Menu</title>
   <style>
-        body {
+    body {
       margin: 0;
       padding: 0;
       background: #0F0F0F;
@@ -14,7 +14,7 @@
     
     /* Header */
     .bakery-header {
-      font-size: 60px; /* smaller */
+      font-size: 60px;
       font-weight: 700;
       letter-spacing: 2px;
       margin-top: 20px;
@@ -24,7 +24,7 @@
     }
     
     .tagline {
-      font-size: 26px; /* smaller */
+      font-size: 26px;
       opacity: 0.9;
       margin-top: -5px;
       margin-bottom: 20px;
@@ -39,18 +39,18 @@
       margin: auto;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px; /* tighter spacing */
+      gap: 18px;
     }
     
     .menu-item {
       background: rgba(255, 255, 255, 0.05);
-      padding: 15px; /* smaller */
+      padding: 15px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.15);
     }
     
     .menu-item img {
-      width: 160px; /* smaller */
+      width: 160px;
       max-width: 90%;
       border-radius: 10px;
       margin-bottom: 10px;
@@ -58,7 +58,7 @@
     }
     
     .item-name {
-      font-size: 30px; /* smaller */
+      font-size: 30px;
       font-weight: bold;
       margin-bottom: 6px;
       color: #FFFFFF;
@@ -66,18 +66,32 @@
     }
     
     .item-desc {
-      font-size: 20px; /* smaller */
+      font-size: 20px;
       opacity: 0.85;
       margin-bottom: 8px;
       font-family: Arial, sans-serif;
     }
     
     .item-price {
-      font-size: 28px; /* smaller */
+      font-size: 28px;
       color: #FFDE59;
       font-weight: bold;
       text-shadow: 0px 0px 3px rgba(255, 222, 89, 0.4);
       font-family: 'Comic Sans MS', sans-serif;
+    }
+
+    /* Chalk Divider */
+    .chalk-divider {
+      grid-column: span 3;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.6) 50%,
+        rgba(255,255,255,0) 100%
+      );
+      margin: 10px 0 5px 0;
+      filter: blur(0.5px);
     }
     
     /* QR SECTION */
@@ -87,11 +101,11 @@
       border-top: 2px solid rgba(255, 255, 255, 0.2);
       display: flex;
       justify-content: center;
-      gap: 60px; /* smaller */
+      gap: 60px;
     }
     
     .qr-box img {
-      width: 180px; /* smaller */
+      width: 180px;
       height: 180px;
       border-radius: 12px;
       background: #fff;
@@ -99,7 +113,7 @@
     }
     
     .qr-label {
-      font-size: 26px; /* smaller */
+      font-size: 26px;
       margin-top: 10px;
       font-weight: bold;
       color: #FFFFFF;
@@ -117,73 +131,52 @@
 
   <div class="menu-container">
 
-    <!-- ITEM 1 -->
+    <!-- CATEGORY: FULL LOAVES -->
+    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
+      <div class="item-name" style="font-size: 36px;">Full Loaves</div>
+    </div>
+    <div class="chalk-divider"></div>
+
     <div class="menu-item">
       <img src="">
       <div class="item-name">Original Full Loaf</div>
-      <div class="item-desc">Baked to perfection!</div>
+      <div class="item-desc">Classic sourdough with a crisp crust.</div>
       <div class="item-price">$9</div>
     </div>
 
-    <!-- ITEM 2 -->
     <div class="menu-item">
       <img src="">
-      <div class="item-name">Jalapeno & Cheddar Full Loaf</div>
-      <div class="item-desc">Spicy jalapenos and cheddar cheese. Full of flavor and spice!</div>
+      <div class="item-name">Jalapeño & Cheddar Full Loaf</div>
+      <div class="item-desc">Spicy jalapeños and melted cheddar.</div>
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM 3 -->
     <div class="menu-item">
       <img src="">
       <div class="item-name">Italian Herbs & Cheddar Full Loaf</div>
-      <div class="item-desc">Italian seasoning with cheddar cheese baked to perfection!</div>
+      <div class="item-desc">Italian seasoning blended with cheddar.</div>
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM 4 -->
     <div class="menu-item">
       <img src="">
-      <div class="item-name">Strawberry White Chocolate Full loaf</div>
-      <div class="item-desc">A perfect desert or treat! full of sweetness and the taste is amazing!</div>
+      <div class="item-name">Strawberry White Chocolate Full Loaf</div>
+      <div class="item-desc">Sweet, fruity, and perfect as a treat.</div>
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM 5 -->
+    <!-- CATEGORY: MINI LOAVES -->
+    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
+      <div class="item-name" style="font-size: 36px;">Mini Loaves</div>
+    </div>
+    <div class="chalk-divider"></div>
+
     <div class="menu-item">
       <img src="">
       <div class="item-name">Chocolate Chip Mini Loaf</div>
-      <div class="item-desc">Yes, Choco Chip bread! Try it today!</div>
+      <div class="item-desc">Sweet sourdough with chocolate chips.</div>
       <div class="item-price">$12</div>
     </div>
 
-    <!-- ITEM 7 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Sourdough English Muffins</div>
-      <div class="item-desc">Perfect bun for your breakfast sandwich!</div>
-      <div class="item-price">$2</div>
-    </div>
-
-    <!-- ITEM 8 -->
-    <div class="menu-item">
-      <img src="">
-      <div class="item-name">Sourdough Discard Cookies</div>
-      <div class="item-desc">Chocolate Chip, M&Ms, Cookies & Cream, S'mores, PB</div>
-      <div class="item-price">$3</div>
-    </div>
-
-  <!-- QR SECTION -->
-  <div class="qr-section">
-    <div class="qr-box">
-      <img src="IMG_1768.jpeg">
-      <div class="qr-label">CashApp</div>
-    </div>
-    <div class="qr-box">
-      <img src="IMG_1769.jpeg">
-      <div class="qr-label">Venmo</div>
-    </div>
-  </div>
-
-</body>
-</html>
+    <!-- CATEGORY: COOKIES -->
+    <div class="menu-item" style="grid-column: span 3; background: none; border: none;">
