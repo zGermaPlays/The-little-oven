@@ -39,14 +39,15 @@
       gap: 20px;
     }
 
-    .menu-box {
+        .menu-box {
       background: rgba(255, 255, 255, 0.05);
       padding: 18px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.15);
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      justify-content: space-between; /* keeps spacing even */
+      min-height: 500px; /* balanced with large images */
     }
 
     .box-title {
@@ -111,7 +112,7 @@
       <div class="bullet-line">Choc Chip</div>
       <div class="bullet-line">M&M</div>
       <div class="bullet-line">Oreo Cookies & Cream</div>
-      <div class="bullet-line">PB</div>
+      <div class="bullet-line">Peanut Butter</div>
 
       <img class="qr-img" src="IMG_1768.jpeg">
       <div class="qr-label">CashApp</div>
