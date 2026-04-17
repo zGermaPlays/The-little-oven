@@ -5,14 +5,13 @@
   <style>
     body {
       margin: 0;
-      padding: 90px 0 0 0; /* scroll buffer to hide search bar */
+      padding: 70px 0 0 0; /* scroll buffer */
       background: #0F0F0F;
       color: #E8E8E8;
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
-    /* Header */
     .bakery-header {
       font-size: 60px;
       font-weight: 700;
@@ -31,7 +30,6 @@
       color: #E8E8E8;
     }
 
-    /* THREE-COLUMN GRID */
     .menu-container {
       width: 95%;
       max-width: 1600px;
@@ -43,32 +41,28 @@
 
     .menu-box {
       background: rgba(255, 255, 255, 0.05);
-      padding: 25px;
+      padding: 20px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.15);
-      min-height: 350px;
+      min-height: 420px; /* balanced height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .box-title {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       font-family: 'Comic Sans MS', sans-serif;
       color: #FFFFFF;
       text-decoration: underline;
       white-space: nowrap;
     }
 
-    .menu-line {
-      font-size: 18px;
-      margin: 8px 0;
-      opacity: 0.9;
-      white-space: nowrap;
-    }
-
     .bullet-line {
-      font-size: 17px;
-      opacity: 0.85;
+      font-size: 18px;
+      opacity: 0.9;
       margin: 6px 0;
       text-align: left;
       padding-left: 20px;
@@ -79,81 +73,85 @@
       margin-right: 4px;
     }
 
-    /* QR SECTION */
-    .qr-section {
-      margin-top: 35px;
-      padding: 20px 0;
-      border-top: 2px solid rgba(255, 255, 255, 0.2);
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+    .menu-line {
+      font-size: 18px;
+      margin: 6px 0;
+      opacity: 0.9;
+      white-space: nowrap;
     }
 
-    .qr-box img {
-      width: 170px;
-      height: 170px;
-      border-radius: 12px;
+    .qr-img, .logo-img {
+      width: 140px; /* medium size */
+      height: 140px;
+      object-fit: contain;
+      margin: 10px auto 0 auto;
+      border-radius: 10px;
       background: #fff;
       border: 3px solid rgba(255, 255, 255, 0.3);
     }
 
     .qr-label {
-      font-size: 24px;
-      margin-top: 10px;
+      font-size: 20px;
+      margin-top: 6px;
       font-weight: bold;
       color: #FFFFFF;
-      font-family: Arial, sans-serif;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
   <div class="bakery-header">The Little Oven</div>
   <div class="tagline">Fresh Sourdough Bread & Sweet Treats! HGN Popup Event!</div>
 
-  <!-- THREE MAIN CATEGORY BOXES -->
   <div class="menu-container">
 
     <!-- COOKIES -->
     <div class="menu-box">
-      <div class="box-title">Cookies — $3</div>
-      <div class="bullet-line">Choc Chip</div>
-      <div class="bullet-line">M&M</div>
-      <div class="bullet-line">Oreo Cookies & Cream</div>
-      <div class="bullet-line">PB</div>
+      <div>
+        <div class="box-title">Cookies — $3</div>
+        <div class="bullet-line">Choc Chip</div>
+        <div class="bullet-line">M&M</div>
+        <div class="bullet-line">Oreo Cookies & Cream</div>
+        <div class="bullet-line">PB</div>
+      </div>
+
+      <div>
+        <img class="qr-img" src="IMG_1768.jpeg">
+        <div class="qr-label">CashApp</div>
+      </div>
     </div>
 
     <!-- MINI LOAVES -->
     <div class="menu-box">
-      <div class="box-title">Mini Loaves — $5</div>
-      <div class="bullet-line">Choco Chip</div>
-      <div class="bullet-line">Strawberry White Choc</div>
-      <div class="bullet-line">Ital. Herbs & Chedder</div>
+      <div>
+        <div class="box-title">Mini Loaves — $5</div>
+        <div class="bullet-line">Choco Chip</div>
+        <div class="bullet-line">Strawberry White Choc</div>
+        <div class="bullet-line">Ital. Herbs & Chedder</div>
+      </div>
+
+      <div>
+        <img class="logo-img" src="logo-placeholder.png">
+      </div>
     </div>
 
     <!-- FULL LOAVES -->
     <div class="menu-box">
-      <div class="box-title">Full Loaves</div>
-      <div class="menu-line">Original Loaf — $9</div>
-      <div class="menu-line">Jalapeño Cheddar — $12</div>
-      <div class="menu-line">Cheddar Loaf — $12</div>
-      <div class="menu-line">Ital. Herbs & Chedder — $12</div>
+      <div>
+        <div class="box-title">Full Loaves</div>
+        <div class="menu-line">Original Loaf — $9</div>
+        <div class="menu-line">Jalapeño Cheddar — $12</div>
+        <div class="menu-line">Cheddar Loaf — $12</div>
+        <div class="menu-line">Ital. Herbs & Chedder — $12</div>
+      </div>
+
+      <div>
+        <img class="qr-img" src="IMG_1769.jpeg">
+        <div class="qr-label">Venmo</div>
+      </div>
     </div>
 
-  </div>
-
-  <!-- QR SECTION -->
-  <div class="qr-section">
-    <div class="qr-box">
-      <img src="IMG_1768.jpeg">
-      <div class="qr-label">CashApp</div>
-    </div>
-    <div class="qr-box">
-      <img src="IMG_1769.jpeg">
-      <div class="qr-label">Venmo</div>
-    </div>
   </div>
 
 </body>
