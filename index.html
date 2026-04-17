@@ -39,15 +39,29 @@
       gap: 20px;
     }
 
-        .menu-box {
+    .menu-box {
       background: rgba(255, 255, 255, 0.05);
       padding: 18px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.15);
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* keeps spacing even */
-      min-height: 500px; /* balanced with large images */
+      justify-content: space-between;
+      height: 520px; /* Ensures all boxes match */
+    }
+
+    .box-top {
+      height: 260px; /* Equal text area */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .box-bottom {
+      height: 220px; /* Equal image area */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
 
     .box-title {
@@ -80,14 +94,23 @@
       white-space: nowrap;
     }
 
-    .qr-img, .logo-img {
+    .qr-img {
       width: 175px;
       height: 175px;
       object-fit: contain;
-      margin: 10px auto 0 auto;
+      margin: 0 auto;
       border-radius: 10px;
-      background: #fff;
+      background: #fff; /* QR codes need white background */
       border: 3px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .logo-img {
+      width: 175px;
+      height: 175px;
+      object-fit: contain;
+      margin: 0 auto;
+      background: transparent; /* Keep logo transparent */
+      border: none;
     }
 
     .qr-label {
@@ -108,36 +131,48 @@
 
     <!-- COOKIES -->
     <div class="menu-box">
-      <div class="box-title">Cookies — $3</div>
-      <div class="bullet-line">Choc Chip</div>
-      <div class="bullet-line">M&M</div>
-      <div class="bullet-line">Oreo Cookies & Cream</div>
-      <div class="bullet-line">Peanut Butter</div>
+      <div class="box-top">
+        <div class="box-title">Cookies — $3</div>
+        <div class="bullet-line">Choco Chip</div>
+        <div class="bullet-line">M&M</div>
+        <div class="bullet-line">Oreo Cookies & Cream</div>
+        <div class="bullet-line">Peanut Butter</div>
+      </div>
 
-      <img class="qr-img" src="IMG_1768.jpeg">
-      <div class="qr-label">CashApp</div>
+      <div class="box-bottom">
+        <img class="qr-img" src="IMG_1768.jpeg">
+        <div class="qr-label">CashApp</div>
+      </div>
     </div>
 
     <!-- MINI LOAVES -->
     <div class="menu-box">
-      <div class="box-title">Mini Loaves — $5</div>
-      <div class="bullet-line">Choco Chip</div>
-      <div class="bullet-line">Strawberry White Choc</div>
-      <div class="bullet-line">Ital. Herbs & Chedder</div>
+      <div class="box-top">
+        <div class="box-title">Mini Loaves — $5</div>
+        <div class="bullet-line">Choco Chip</div>
+        <div class="bullet-line">Strawberry White Choc</div>
+        <div class="bullet-line">Ital. Herbs & Chedder</div>
+      </div>
 
-      <img class="logo-img" src="80AC1A42-9A62-4B2E-B6CC-BE3DE79F3852.png">
+      <div class="box-bottom">
+        <img class="logo-img" src="80AC1A42-9A62-4B2E-B6CC-BE3DE79F3852.png">
+      </div>
     </div>
 
     <!-- FULL LOAVES -->
     <div class="menu-box">
-      <div class="box-title">Full Loaves</div>
-      <div class="menu-line">Original Loaf — $9</div>
-      <div class="menu-line">Jalapeño Cheddar — $12</div>
-      <div class="menu-line">Cheddar Loaf — $12</div>
-      <div class="menu-line">Ital. Herbs & Chedder — $12</div>
+      <div class="box-top">
+        <div class="box-title">Full Loaves</div>
+        <div class="menu-line">Original Loaf — $9</div>
+        <div class="menu-line">Jalapeño Cheddar — $12</div>
+        <div class="menu-line">Cheddar Loaf — $12</div>
+        <div class="menu-line">Ital. Herbs & Chedder — $12</div>
+      </div>
 
-      <img class="qr-img" src="IMG_1769.jpeg">
-      <div class="qr-label">Venmo</div>
+      <div class="box-bottom">
+        <img class="qr-img" src="IMG_1769.jpeg">
+        <div class="qr-label">Venmo</div>
+      </div>
     </div>
 
   </div>
