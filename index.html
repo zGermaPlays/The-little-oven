@@ -5,7 +5,7 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 90px 0 0 0; /* extra top space for scroll buffer */
       background: #0F0F0F;
       color: #E8E8E8;
       font-family: Arial, sans-serif;
@@ -17,7 +17,6 @@
       font-size: 60px;
       font-weight: 700;
       letter-spacing: 2px;
-      margin-top: 20px;
       margin-bottom: 5px;
       font-family: 'Comic Sans MS', sans-serif;
       color: #FFFFFF;
@@ -27,7 +26,7 @@
       font-size: 26px;
       opacity: 0.9;
       margin-top: -5px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       font-family: 'Comic Sans MS', sans-serif;
       color: #E8E8E8;
     }
@@ -44,7 +43,7 @@
 
     .menu-box {
       background: rgba(255, 255, 255, 0.05);
-      padding: 20px;
+      padding: 25px; /* slightly more padding for Cookies box spacing */
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.15);
       min-height: 350px;
@@ -53,38 +52,39 @@
     .box-title {
       font-size: 32px;
       font-weight: bold;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
       font-family: 'Comic Sans MS', sans-serif;
       color: #FFFFFF;
       text-decoration: underline;
     }
 
     .menu-line {
-      font-size: 20px;
-      margin: 6px 0;
+      font-size: 18px; /* smaller so everything fits on one line */
+      margin: 8px 0;
       opacity: 0.9;
+      white-space: nowrap; /* forces one-line formatting */
     }
 
     /* QR SECTION */
     .qr-section {
-      margin-top: 40px;
+      margin-top: 35px; /* slightly tighter */
       padding: 20px 0;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
       display: flex;
       justify-content: center;
-      gap: 60px;
+      gap: 40px; /* tighter gap so everything fits */
     }
 
     .qr-box img {
-      width: 180px;
-      height: 180px;
+      width: 170px;
+      height: 170px;
       border-radius: 12px;
       background: #fff;
       border: 3px solid rgba(255, 255, 255, 0.3);
     }
 
     .qr-label {
-      font-size: 26px;
+      font-size: 24px;
       margin-top: 10px;
       font-weight: bold;
       color: #FFFFFF;
@@ -97,7 +97,7 @@
 
   <!-- Header -->
   <div class="bakery-header">The Little Oven</div>
-  <div class="tagline">Fresh Sourdough Bread & Sweet treats! HGN popup event!</div>
+  <div class="tagline">Fresh Sourdough Bread & Sweet Treats! HGN Popup Event!</div>
 
   <!-- THREE MAIN CATEGORY BOXES -->
   <div class="menu-container">
@@ -105,24 +105,27 @@
     <!-- FULL LOAVES -->
     <div class="menu-box">
       <div class="box-title">Full Loaves</div>
-      <div class="menu-line">Original Full Loaf — $9</div>
-      <div class="menu-line">Jalapeño & Cheddar — $12</div>
-      <div class="menu-line">Italian Herbs & Cheddar — $12</div>
-      <div class="menu-line">Strawberry White Chocolate — $12</div>
+      <div class="menu-line">Original Loaf — $9</div>
+      <div class="menu-line">Jalapeño Cheddar — $12</div>
+      <div class="menu-line">Herb Cheddar — $12</div>
+      <div class="menu-line">Strawberry White Choc — $12</div>
     </div>
 
     <!-- MINI LOAVES -->
     <div class="menu-box">
       <div class="box-title">Mini Loaves</div>
-      <div class="menu-line">Chocolate Chip Mini Loaf — $12</div>
+      <div class="menu-line">Choco Chip Mini — $12</div>
     </div>
 
     <!-- COOKIES -->
     <div class="menu-box">
       <div class="box-title">Cookies</div>
-      <div class="menu-line">Sourdough Discard Cookies — $3</div>
-      <div class="menu-line" style="font-size: 18px; opacity: 0.8;">
-        Chocolate Chip • M&Ms • Cookies & Cream • S’mores • PB
+      <div class="menu-line">Discard Cookies — $3</div>
+      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
+        Choc Chip • M&Ms • Cookies & Cream
+      </div>
+      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
+        S’mores • PB
       </div>
     </div>
 
