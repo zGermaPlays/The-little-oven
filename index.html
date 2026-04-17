@@ -56,6 +56,7 @@
       font-family: 'Comic Sans MS', sans-serif;
       color: #FFFFFF;
       text-decoration: underline;
+      white-space: nowrap;
     }
 
     .menu-line {
@@ -63,6 +64,19 @@
       margin: 8px 0;
       opacity: 0.9;
       white-space: nowrap;
+    }
+
+    .bullet-line {
+      font-size: 17px;
+      opacity: 0.85;
+      margin: 6px 0;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    .bullet-line::before {
+      content: "• ";
+      margin-right: 4px;
     }
 
     /* QR SECTION */
@@ -104,26 +118,19 @@
 
     <!-- COOKIES -->
     <div class="menu-box">
-      <div class="box-title">Cookies</div>
-      <div class="menu-line">Discard Cookies — $3</div>
-      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
-        Choc Chip • M&M • Oreo Cookies & Cream
-      </div>
-      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
-        S’mores • PB
-      </div>
+      <div class="box-title">Cookies — $3</div>
+      <div class="bullet-line">Choc Chip</div>
+      <div class="bullet-line">M&M</div>
+      <div class="bullet-line">Oreo Cookies & Cream</div>
+      <div class="bullet-line">PB</div>
     </div>
 
     <!-- MINI LOAVES -->
     <div class="menu-box">
-      <div class="box-title">Mini Loaves</div>
-      <div class="menu-line">Mini Loaves — $5</div>
-      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
-        Choco Chip • Strawberry White Choc
-      </div>
-      <div class="menu-line" style="font-size: 17px; opacity: 0.8;">
-        Ital. Herbs & Chedder
-      </div>
+      <div class="box-title">Mini Loaves — $5</div>
+      <div class="bullet-line">Choco Chip</div>
+      <div class="bullet-line">Strawberry White Choc</div>
+      <div class="bullet-line">Ital. Herbs & Chedder</div>
     </div>
 
     <!-- FULL LOAVES -->
@@ -131,6 +138,7 @@
       <div class="box-title">Full Loaves</div>
       <div class="menu-line">Original Loaf — $9</div>
       <div class="menu-line">Jalapeño Cheddar — $12</div>
+      <div class="menu-line">Cheddar Loaf — $12</div>
       <div class="menu-line">Ital. Herbs & Chedder — $12</div>
     </div>
 
